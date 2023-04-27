@@ -53,4 +53,8 @@ public class KadaiFirstController {
     public int calcTimes(@PathVariable int num1, @PathVariable int num2) {
        return num1 * num2;
      }
+    @GetMapping("/divide/{num1}/{num2}")
+    public int calcDivide(@PathVariable int num1, @PathVariable int num2) {
+       return num1 / num2;
+     }
 }
